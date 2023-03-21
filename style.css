@@ -6,7 +6,7 @@ body {
     background: linear-gradient(135deg, #1D3461, #1F487E, #376996);
     background-size: 500%;
     background-position: 0%, 50%;
-    animation: bgMove 20s ease-in-out;
+    animation: bgMove 10s ease-in-out;
 }
 
 @keyframes bgMove {
@@ -23,10 +23,48 @@ body {
 
 header {
     background-color: #376996;
-    opacity: .95;
     width: 100%;
     height: 50px;
     border-bottom: 1px solid #829CBC;
     position: fixed;
     top: 0;
+}
+
+header .burger-menu {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: .4rem;
+    left: .4rem;
+}
+
+header .burger-menu .bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+header .burger-menu-options {
+    background-color: #6290C8;
+}
+
+header .burger-menu-options a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+header .burger-menu-options .burger-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #829CBC;
+}
+
+header .burger-menu-options .burger-item:hover {
+    background-color: #376996;
 }
