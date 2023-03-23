@@ -25,7 +25,7 @@ header {
     background-color: #376996;
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid #829CBC;
+    border-bottom: 2px solid #829CBC;
     position: fixed;
     top: 0;
 }
@@ -50,6 +50,16 @@ header .burger-menu .bar {
 
 header .burger-menu-options {
     background-color: #6290C8;
+    position: relative;
+    top: -250px;
+    animation: 1s ease;
+}
+/* figure out why burger menu toggle aint working yet*/
+
+header .burger-menu-options.active {
+    position: relative;
+    top: 16px;
+    display: block;
 }
 
 header .burger-menu-options a {
@@ -67,4 +77,14 @@ header .burger-menu-options .burger-item {
 
 header .burger-menu-options .burger-item:hover {
     background-color: #376996;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #1D3461;
+    opacity: .9;
+    width: 100vw;
+    display: none;
 }
