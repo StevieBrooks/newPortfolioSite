@@ -28,6 +28,7 @@ header {
     border-bottom: 2px solid #829CBC;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 header .burger-menu {
@@ -41,25 +42,45 @@ header .burger-menu {
     left: .4rem;
 }
 
+header .burger-menu:hover {
+    cursor: pointer;
+}
+
 header .burger-menu .bar {
     width: 100%;
     height: 5px;
     border-radius: 5px;
     background-color: aliceblue;
+    transition: .25s ease;
 }
 
 header .burger-menu-options {
     background-color: #6290C8;
     position: relative;
-    top: -250px;
-    animation: 1s ease;
+    top: -465px;
+    opacity: 0;
+    transition: .25s ease;
 }
 /* figure out why burger menu toggle aint working yet*/
+
 
 header .burger-menu-options.active {
     position: relative;
     top: 16px;
     display: block;
+    opacity: 1;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(.5rem, .6rem);
+}
+
+header .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+header .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(.4rem, -.5rem);
 }
 
 header .burger-menu-options a {
@@ -84,7 +105,13 @@ header .burger-menu-options .burger-item:hover {
     top: 0;
     height: 100vh;
     background-color: #1D3461;
-    opacity: .9;
+    opacity: 0;
     width: 100vw;
-    display: none;
+    /* display: none; */
+    transition: .7s ease;
+}
+
+.overlay.active {
+    /* display: block; */
+    opacity: .9;
 }
