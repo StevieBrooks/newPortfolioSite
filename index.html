@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BrooksCode</title>
+    <!--HAVE MUSIC BED UPON PAGE LOAD OR AFTER INITIAL EVENT-->
+</head>
+<body>
+    
+    <!--Grid design with featured image in main section
+    
+    https://colibriwp.com/blog/website-layout-design-ideas/-->
+
+
+    <header>
+
+        <div class="burger-menu">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+
+        <div class="burger-menu-options">
+            <a href="#profile"><div class="burger-item">Profile</div></a>
+            <a href="#skills"><div class="burger-item">Skills</div></a>
+            <a href="#experience"><div class="burger-item">Experience</div></a>
+            <a href="#portfolio"><div class="burger-item">Portfolio</div></a>
+            <a href="#contact"><div class="burger-item">Contact</div></a>
+            <a href="#privacy"><div class="burger-item">Privacy</div></a>
+        </div>
+
+    </header>
+
+    <div class="overlay"></div>
+
+    <main>
+
+        <section class="left-section">
+            
+            <section class="hero">
+                <!--Use img of me pointing to social icons. Could even use Codewars icon.
+                Use gradient for BG, possibly some animations.-->
+                <img src="pics/hero-img.png" class="my-hero-pic" alt="">
+
+                <div class="social-icons">
+                    <div class="social-icon linkedin"><img src="" alt=""></div>
+                    <div class="social-icon twitter"><img src="" alt=""></div>
+                    <div class="social-icon github"><img src="" alt=""></div>
+                </div>
+
+                <h1>Brooks[ode</h1>
+                <!--could stick img and h1 inside div and rotate div on y-axis. img front, h1 back...-->
+
+            </section>
+
+            <section class="profile" id="profile">
+
+                <h2>Some snazzy headline here...</h2>
+
+                <p>Two paragraphs at the most, pay particular attention to that first sentence...
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, sapiente atque labore alias laborum illo quis consequuntur provident nobis omnis excepturi odio porro quia nam perferendis iure cumque fugiat doloribus?
+                </p>
+                <!--Use a few exciting, happy pictures to make site personable, border-width 50%-->
+                <div class="profile-pics">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+                <p>Two paragraphs at the most, pay particular attention to that first sentence...
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus alias ab repellendus ipsa velit corrupti voluptatem consequuntur eaque perspiciatis quibusdam, suscipit in optio repudiandae?
+                </p>
+
+            </section>
+
+            <section class="skills" id="skills">
+
+                <h2>Another snazzy headline here...</h2>
+
+                <p>One paragraph to explain skillset. Aside from including logos for HTML, CSS, JS, and PHP below, should also mention copywriting/seo experience.</p>
+
+                <div class="skills-pics">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+            </section>
+
+            <section class="experience" id="experience">
+
+                <!--No ideas at the mo-->
+
+            </section>
+
+            <section class="portfolio" id="portfolio">
+
+                <h2>Another snazzy title...</h2>
+
+                <p>Paragraph to give brief overview of what to expect...</p>
+
+                <div class="project-card project1"></div>
+                <div class="project-card project2"></div>
+                <div class="project-card project3"></div>
+                <div class="project-card project4"></div>
+                <div class="project-card project5"></div>
+                
+            </section>
+
+            <section class="contact" id="contact">
+
+                <h2>Snazzy headline about contact...</h2>
+
+                <p>Friendly message...</p>
+
+                <form action="" method="post">
+
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <nav class="contact-subject-nav">
+                        Subject
+                        <ul>
+                            <li>Technical writing</li>
+                            <li>Website design</li>
+                            <li>Consultation</li>
+                            <li>Suggestions/feedback</li>
+                        </ul>
+                    </nav>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type message here..."></textarea>
+
+                </form>
+
+            </section>
+
+        </section>
+
+        <!--Create option to resize this section when screen is 1000px wide.-->
+        <section class="right-section">
+            <a href=""><div class="nav-item">Profile</div></a>
+            <a href=""><div class="nav-item">Skills</div></a>
+            <a href=""><div class="nav-item">Experience</div></a>
+            <a href=""><div class="nav-item">Portfolio</div></a>
+            <a href=""><div class="nav-item">Contact</div></a>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="logo-copyright">
+            <h4>Brooks[ode</h4>
+            <p>Copyright 2023</p>
+        </section>
+
+        <section class="formalities">
+            <a href="">About</a>
+            <a href="">Privacy</a>
+            <a href="">Contact</a>
+        </section>
+
+        <section class="socials">
+            <div class="socials-icon linkedin"><img src="" alt=""></div>
+                    <div class="socials-icon twitter"><img src="" alt=""></div>
+                    <div class="socials-icon github"><img src="" alt=""></div>
+        </section>
+
+    </footer>
+
+    <script src="script.js"></script>
+     
+</body>
+</html>

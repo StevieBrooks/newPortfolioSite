@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    background: linear-gradient(135deg, #1D3461, #1F487E, #376996);
+    background-size: 500%;
+    background-position: 0%, 50%;
+    animation: bgMove 10s ease-in-out;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0%, 50%;
+    }
+    50% {
+        background-position: 100%, 50%;
+    }
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+header {
+    background-color: #376996;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #829CBC;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header .burger-menu {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: .4rem;
+    left: .4rem;
+}
+
+header .burger-menu:hover {
+    cursor: pointer;
+}
+
+header .burger-menu .bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    transition: .3s ease;
+}
+
+header .burger-menu-options {
+    background-color: #6290C8;
+    position: relative;
+    top: -465px;
+    opacity: 0;
+    transition: .3s ease;
+}
+/* figure out why burger menu toggle aint working yet*/
+
+
+header .burger-menu-options.active {
+    position: relative;
+    top: 16px;
+    display: block;
+    opacity: 1;
+}
+
+.burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(.5rem, .6rem);
+}
+
+header .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+header .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(.4rem, -.5rem);
+}
+
+header .burger-menu-options a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+header .burger-menu-options .burger-item {
+    padding: 1.5rem;
+    border-bottom: 1px solid #829CBC;
+}
+
+header .burger-menu-options .burger-item:hover {
+    background-color: #376996;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #1D3461;
+    opacity: 0;
+    width: 100vw;
+    /* display: none; */
+    transition: .7s ease;
+}
+
+.overlay.active {
+    /* display: block; */
+    opacity: .9;
+}
+
+.my-hero-pic {
+    width: 50vw;
+    margin-top: 5rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 2px solid #829CBC;
+    border-radius: 150px;
+}
