@@ -116,12 +116,68 @@ header .burger-menu-options .burger-item:hover {
     opacity: .9;
 }
 
-.my-hero-pic {
-    width: 50vw;
-    margin-top: 5rem;
+.flip-container {
     position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 5rem auto;
+}
+
+.flip-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    animation: card-animation 10s infinite;
+}
+
+/* .flip-card:hover {
+    transform: rotateY(180deg);
+} */
+
+.flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+}
+
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h1 {
+    position: absolute;
+    bottom: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 50%);
+    font-size: 120%;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    /*Rethink font...*/
+}
+
+.my-hero-pic {
+    width: 100%;
     border: 2px solid #829CBC;
     border-radius: 150px;
+}
+
+@keyframes card-animation {
+    0% {
+
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+
+    }
 }
