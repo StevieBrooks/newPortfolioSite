@@ -1,3 +1,4 @@
+
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerOptions = document.querySelector('.burger-menu-options');
 const overlay = document.querySelector('.overlay');
