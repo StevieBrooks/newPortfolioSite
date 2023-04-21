@@ -116,10 +116,18 @@ header .burger-menu-options .burger-item:hover {
     opacity: .9;
 }
 
+.left-section {
+    margin: 0 1.5rem;
+}
+
+.left-section h2 {
+    text-align: center;
+}
+
 .flip-container {
     position: relative;
     width: 250px;
-    height: 250px;
+    height: 220px;
     margin: 5rem auto;
 }
 
@@ -155,7 +163,7 @@ header .burger-menu-options .burger-item:hover {
 
 .flip-card-back h1 {
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 120%;
@@ -180,4 +188,39 @@ header .burger-menu-options .burger-item:hover {
     100% {
 
     }
+}
+
+.left-section .hero .social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.hero .social-icon img {
+    width: 3rem;
+}
+
+.skills .skills-pics {
+    display: flex;
+    justify-content: space-around;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.skills .skills-pics img {
+    width: 3rem;
+}
+
+.portfolio .project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio .project-card {
+    width: 250px;
+    height: 200px;
+    background-color: #6290C8;
+    margin: 1rem;
 }
