@@ -3,199 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>BrooksCode</title>
-    <!--HAVE MUSIC BED UPON PAGE LOAD OR AFTER INITIAL EVENT-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.css">
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.Default.css">
+
+    <title>Project 1: "Gazetteer"</title>
 </head>
 <body>
+
+    <div id="map"></div>
     
-    <!--Grid design with featured image in main section - oh yes
-    
-    https://colibriwp.com/blog/website-layout-design-ideas/-->
+    <section class="container d-flex">
 
-
-    <header>
-
-        <div class="burger-menu">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-        </div>
-
-        <div class="burger-menu-options">
-            <a href="#profile"><div class="burger-item">Profile</div></a>
-            <a href="#skills"><div class="burger-item">Skills</div></a>
-            <a href="#experience"><div class="burger-item">Experience</div></a>
-            <a href="#portfolio"><div class="burger-item">Portfolio</div></a>
-            <a href="#contact"><div class="burger-item">Contact</div></a>
-            <a href="#privacy"><div class="burger-item">Privacy</div></a>
-        </div>
-
-    </header>
-
-    <div class="overlay"></div>
-
-    <main>
-
-        <section class="left-section">
-            
-            <section class="hero">
-                <!--Use img of me pointing to social icons. Could even use Codewars icon.
-                Use gradient for BG, possibly some animations.-->
-
-                <div class="flip-container">
-                    <div class="flip-card">
-                        <div class="flip-card-front"><img src="pics/hero-img.png" class="my-hero-pic" alt=""></div>
-                        <div class="flip-card-back"><img src="pics/bg.png" class="my-hero-pic" alt=""><h1>Brooks[ode</h1></div>
-                    </div>
-                </div>
-
-                
-
-                <div class="social-icons">
-                    <div class="social-icon linkedin"><img src="pics/linkedin.png" alt=""></div>
-                    <div class="social-icon twitter"><img src="pics/twitter.png" alt=""></div>
-                    <div class="social-icon github"><img src="pics/github.png" alt=""></div>
-                </div>
-
-            </section>
-
-            <section class="profile" id="profile">
-
-                <h2>About: So I've got 10 seconds to stand out, right?</h2>
-
-                <p>I used to write erotica and wrote a book during the pandemic called Penis Island. These days, I can't turn on my laptop without thinking about the back end!
-                </p>
-                <p>I like to consider myself a humorous character and most people would probably describe me as bubbly. However, I love hard work and especially enjoy being creative. Problem solving is something new, but since learning to code, my aptitude and appreciation for this grows daily. I hope you'll explore my roster of projects and then offer me a job!<br> <span class="emoji-span">&#128513; &#128513; &#128513;</span></p>
-                <!--Use a few exciting, happy pictures to make site personable, border-width 50%-->
-                <div class="profile-pics">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-
-            </section>
-
-            <section class="skills" id="skills">
-
-                <h2>Skills: Soon to pay your bills!</h2>
-
-                <p>Most of my projects gravitate around technologies such as HTML, CSS and JavaScript. However, I have also used PHP and Python. Furthermore, I am an experienced copywriter and have a reasonable understanding of SEO.</p>
-
-                <div class="skills-pics">
-                    <img src="pics/html.png" alt="">
-                    <img src="pics/css.png" alt="">
-                    <img src="pics/javascript.png" alt="">
-                    <img src="pics/SEO.png" alt="">
-                </div>
-
-            </section>
-
-            <section class="experience" id="experience">
-
-                <!--No ideas at the mo-->
-
-            </section>
-
-            <section class="portfolio" id="portfolio">
-
-                <h2>Portfolio:</h2>
-
-                <p>This section contains my most recent work including two full-stack projects I made during my training.</p>
-
-                <div class="project-cards">
-                   
-                    <div class="wrap animate pop">
-                        <div class="card-overlay">
-                            <div class="overlay-content animate slide-left delay-2">
-                                <h2 class="h2-animated animate slide-left pop delay-4">Viet Limbo</h2>
-                                <p class="p-animated animate slide-left pop delay-5">Tech Stack: <em>HTML, CSS, JavaScript</em></p>
-                            </div>
-                            <div class="image-content animate slide delay-5"></div>
-                            <div class="dots animate">
-                                <div class="dot animate slide-up delay-6"></div>
-                                <div class="dot animate slide-up delay-7"></div>
-                                <div class="dot animate slide-up delay-8"></div>
-                            </div>
-                        </div>
-                        <div class="text">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, maxime ex! Sit quis deserunt nulla quas necessitatibus dicta sint accusantium.</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quis deserunt nihil adipisci voluptatem numquam fuga accusantium, iusto provident ratione?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo iure ullam eveniet voluptatibus consequatur! Cupiditate.</p>
-                        </div>
-                    </div>
-
-
-                    <!--NEED TO HAVE A GOOD RUMMAGE THROUGH THIS...
-                    https://freefrontend.com/css-cards/-->
-                </div>
-                
-            </section>
-
-            <section class="contact" id="contact">
-
-                <h2>Contact Me:</h2>
-
-                <p>Whatever your query or concern, I would absolutely love to hear from you. I've built a snazzy contact form below and I welcome any messages you may have, whether it related to work or simply a suggestion for BrooksCode. I will do my utmost best to respond within 24 hours.</p>
-
-                <form action="" method="post" class="contact-form">
-
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email">
-                    <nav class="contact-subject-nav">
-                        Subject
-                        <ul>
-                            <li>Technical writing</li>
-                            <li>Website design</li>
-                            <li>Consultation</li>
-                            <li>Suggestions/feedback</li>
-                        </ul>
-                    </nav>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Type message here..."></textarea>
-
-                </form>
-
-            </section>
-
+        <section class="country-search">
+          <div class="dropdown">
+            <select name="" id="dropdownMenuButton" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <option value="">Select Country</option>
+            </select>
         </section>
 
-        <!--Create option to resize this section when screen is 1000px wide.-->
-        <section class="right-section">
-            <a href=""><div class="nav-item">Profile</div></a>
-            <a href=""><div class="nav-item">Skills</div></a>
-            <a href=""><div class="nav-item">Experience</div></a>
-            <a href=""><div class="nav-item">Portfolio</div></a>
-            <a href=""><div class="nav-item">Contact</div></a>
-        </section>
+    </section>
 
-    </main>
+    <section class="content-display">
 
-    <footer>
+      <div class="card">
+        <!-- <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Country Name</h5>
 
-        <section class="logo-copyright">
-            <h4>Brooks[ode</h4>
-            <p>Copyright 2023</p>
-        </section>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Capital City</li>
+            <li class="list-group-item">Population</li>
+            <li class="list-group-item">Region</li>
+            <li class="list-group-item">Currency</li>
+          </ul>
+          
+          <a href="#" class="card-link" target="_blank">Wikipedia</a>
+        </div> -->
+      </div>
+      <!--Card causes 403 forbidden error in console-->
 
-        <section class="formalities">
-            <a href="">About</a>
-            <a href="">Privacy</a>
-            <a href="">Contact</a>
-        </section>
+    </section>
 
-        <section class="socials">
-            <div class="socials-icon linkedin"><img src="" alt=""></div>
-                    <div class="socials-icon twitter"><img src="" alt=""></div>
-                    <div class="socials-icon github"><img src="" alt=""></div>
-        </section>
 
-    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Leaflet.markercluster-1.4.1\dist\leaflet.markercluster-src.js"></script>
+    <script src="Leaflet.markercluster-1.4.1\src\MarkerCluster.js"></script>
 
     <script src="script.js"></script>
-     
+
 </body>
 </html>
