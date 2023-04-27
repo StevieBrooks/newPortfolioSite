@@ -28,7 +28,7 @@ header {
     border-bottom: 2px solid #829CBC;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 }
 
 header .burger-menu {
@@ -218,13 +218,11 @@ header .burger-menu-options .burger-item:hover {
     flex-wrap: wrap;
 }
 
-.portfolio .project-card {
-    width: 250px;
-    height: 200px;
-    background-color: #6290C8;
-    margin: 1rem;
-}
+
+
+
+
 
 .contact-form {
     text-align: center;
-}
+} 
