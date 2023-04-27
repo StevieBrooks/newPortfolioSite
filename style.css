@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     padding: 0;
@@ -226,3 +227,76 @@ header .burger-menu-options .burger-item:hover {
 .contact-form {
     text-align: center;
 } 
+=======
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.container {
+    z-index: 5;
+    position: fixed;
+    top: .6rem;
+    left: 2.2rem;
+    width: 100%;
+}
+
+.container .country-search {
+    display: flex;
+}
+
+.container .btn {
+    background-color: rgb(246, 222, 38);
+    color: #372B2B;
+    border: 2px solid #372B2B;
+    font-weight: 500;
+    margin: 0 .3rem;
+}
+
+.container .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.container .dropdown-item {
+    background-color: #F6DE26;
+    color: #372B2B;
+    border: 1px solid #372B2B;
+}
+
+.container .btn:hover, .container .dropdown-item:hover {
+    background-color: #F1BA0A;
+}
+
+.container .dropdown-item img {
+    width: 1.5rem;
+}
+
+.leaflet-control {
+    float: right;
+}
+
+.content-display .card {
+    display: none;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 56%);
+    width: 70vw;
+    max-width: 350px;
+    height: 410px;
+    max-height: 500px;
+    overflow: scroll;
+    border: 2px solid #372B2B;
+}
+
+.card-body {
+    text-align: center;
+}
+>>>>>>> 8c015f5ebbb60d910abe055a94602447c8ab9913
