@@ -218,9 +218,87 @@ header .burger-menu-options .burger-item:hover {
     flex-wrap: wrap;
 }
 
+.project-card {
+    width: 250px;
+    height: 300px;
+    background: url('pics/nam2.jpg');
+    background-size: cover;
+    border: 1px solid #6290C8;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
 
-fuck uyou git
+.pcard-details {
+    text-align: center;
+    position: relative;
+    top: 12.84rem;
+    background-color: rgb(31, 72, 126, .8);
+    padding: 1rem 0;
+    margin: 0;
+    border-top: 1px solid #6290C8;
+    border-radius: 0 0 12px 12px;
+    transition: .3s ease-in-out;
+}
 
+.pcard-details .pcard-title {
+    margin: 0;
+}
+
+.pcard-details .pcard-subtitle {
+    margin: 1rem 0 0 0;
+}
+
+.pcard-info {
+    display: none;
+    text-align: center;
+    height: 69%;
+    overflow: auto;
+    background-color: rgb(31, 72, 126, .8);
+    position: relative;
+    top: 12.5rem;
+    border-radius: 0 0 12px 12px;
+    transition: .3s ease-in-out;
+}
+
+.pcard-info::-webkit-scrollbar {
+    width: 5px;
+}
+
+.pcard-info::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+}
+
+.pcard-info::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #829CBC;
+}
+
+.pcard-info .pcard-buttons button {
+    font-size: 1.2rem;
+    background-color: #829CBC;
+    color: #1D3461;
+    padding: .2rem .5rem;
+    border: 1px solid #1D3461;
+    border-radius: 50px;
+}
+
+.project-card:hover {
+    background-size: 120%;
+    background-position: 50% 50%;
+}
+
+.project-card:hover .pcard-details {
+    top: 0;
+    border-radius: 12px 12px 0 0;
+    border-top: none;
+    border-bottom: 1px solid #6290C8;
+}
+
+.project-card:hover .pcard-info {
+    display: block;
+    top: 0;
+}
 
 
 .contact-form {
