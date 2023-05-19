@@ -331,9 +331,8 @@ header .burger-menu-options .burger-item:hover {
 
 .right-section {
     grid-area: sidebar;
-    background-color: #829CBC;
-    display: flex;
-    flex-direction: column;
+    /* background-color: #829CBC; */
+    border-left: 1px solid #829CBC;
     padding-top: 50px;
     padding-bottom: 500px;
     position: fixed;
@@ -342,13 +341,81 @@ header .burger-menu-options .burger-item:hover {
     width: 25%;
 }
 
-.right-section a {
-    height: 73px;
+.right-section .sidenav {
+    display: flex;
+    flex-direction: column;
 }
 
-.right-section a .nav-item {
-    margin: 1rem;
+.right-section .sidenav a {
+    border-bottom: 1px solid #829CBC;
 }
+
+.right-section .sidenav a:link {
+    height: 103px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.right-section .sidenav a:nth-child(1) {
+    background: linear-gradient(to right, rgb(29, 52, 97, .7), rgb(31, 72, 126, .7)), url(pics/profile-ben-sweet-2LowviVHZ-E-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.right-section .sidenav a:nth-child(2) {
+    background: linear-gradient(to right, rgb(29, 52, 97, .3), rgb(31, 72, 126, .3)), url(pics/skills-nubelson-fernandes-Y376h7VN27c-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.right-section .sidenav a:nth-child(3) {
+    background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/exp-adrian-susec-fg8Bq7BuTGY-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.right-section .sidenav a:nth-child(4) {
+    background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/port-ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.right-section .sidenav a:nth-child(5) {
+    background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/contact-pawel-czerwinski--0xCCPIbl3M-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+}
+
+.right-section .sidenav a:hover .nav-item {
+    padding-left: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.right-section .sidenav a:hover {
+    background-size: 102.5%;
+}
+
+.right-section .sidenav a .nav-item {
+    position: relative;
+    bottom: .5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    background-color: rgb(130, 156, 188, .9);
+    color: #1D3461;
+    border: 1px solid #1D3461;
+    border-left: none;
+    border-radius: 0 20px 10px 0;
+    transition: .4s ease;
+    /* find more interesting font */
+}
+
+
+
+
 
 
 
@@ -413,3 +480,6 @@ footer .socials {
 footer .socials img {
     width: 2rem;
 }
+
+
+/* consider media query breakpoint at 550px */
