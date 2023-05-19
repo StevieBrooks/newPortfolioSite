@@ -46,12 +46,12 @@ header .burger-menu .bar {
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background-color: aliceblue;
+    background-color: #829CBC;
     transition: .3s ease;
 }
 
 header .burger-menu-options {
-    background-color: #6290C8;
+    background-color: #829CBC;
     position: relative;
     top: -465px;
     opacity: 0;
@@ -82,7 +82,7 @@ header .burger-menu-options a {
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: aliceblue;
+    color: #1D3461;
     font-size: 1.2rem;
 }
 
@@ -164,7 +164,7 @@ header .burger-menu-options .burger-item:hover {
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 120%;
-    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
     font-family: 'Press Start 2P', cursive;
     /*Rethink font...*/
 }
@@ -331,7 +331,7 @@ header .burger-menu-options .burger-item:hover {
 
 .right-section {
     grid-area: sidebar;
-    background-color: #6290C8;
+    background-color: #829CBC;
     display: flex;
     flex-direction: column;
     padding-top: 50px;
@@ -358,22 +358,46 @@ footer {
     z-index: 10;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #829CBC;
+    color: #829CBC;
     /* make height of each section 80%, center, add padding and build bar between each */
 }
 
+footer .logo-copyright {
+    height: 70%;
+    text-align: center;
+    border-right: 1px solid #829CBC;
+}
+
 footer .logo-copyright h4, footer .logo-copyright p {
+    position: relative;
+    bottom: .5rem;
     margin:  .5rem 1rem;
 } 
 
+footer .logo-copyright h4 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+footer .logo-copyright h4:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 footer .formalities {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 35%;
 }
 
 footer .formalities a {
     color: #829CBC;
+    margin:  .3rem .8rem;
     /* love this color for the footer! */
 }
 
@@ -382,8 +406,10 @@ footer .socials {
     justify-content: space-evenly;
     align-items: center;
     width: 30%;
+    border-left: 1px solid #829CBC;
+    height: 70%;
 }
 
 footer .socials img {
-    width: 2.2rem;
+    width: 2rem;
 }
