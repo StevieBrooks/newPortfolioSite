@@ -14,6 +14,10 @@ body {
                     "footer footer footer footer";
 }
 
+/*=====================================================================
+                                HEADER
+======================================================================*/
+
 header {
     background-color: #1d3461;
     width: 100%;
@@ -58,7 +62,6 @@ header .burger-menu-options {
     transition: .3s ease;
 }
 
-
 header .burger-menu-options.active {
     position: relative;
     top: 16px;
@@ -95,6 +98,10 @@ header .burger-menu-options .burger-item:hover {
     background-color: #376996;
 }
 
+/*=====================================================================
+                                OVERLAY
+======================================================================*/
+
 .overlay {
     position: fixed;
     top: 0;
@@ -111,21 +118,26 @@ header .burger-menu-options .burger-item:hover {
     opacity: .9;
 }
 
+/*=====================================================================
+                                LEFT SECTION
+======================================================================*/
+
 .left-section {
     grid-area: main;
-    margin: 0 1.5rem;
-    background-color: #6290C8;
+    /* margin: 0 1.5rem; */
 }
 
-.left-section h2 {
-    text-align: center;
+.left-section .hero, .left-section .profile, .left-section .skills, .left-section .experience, .left-section .portfolio, .left-section .contact {
+    padding: 1.5rem;
 }
+
+/*================================HERO================================*/
 
 .flip-container {
     position: relative;
     width: 250px;
     height: 220px;
-    margin: 5rem auto;
+    margin: 4rem auto;
 }
 
 .flip-card {
@@ -192,11 +204,115 @@ header .burger-menu-options .burger-item:hover {
     justify-content: space-around;
     width: 15rem;
     margin: 0 auto;
+    padding: 1rem;
+    /* border: 1px solid #1D3461;
+    border-radius: 5px 50px 20px 5px;
+    background-color: #829CBC; */
 }
 
 .hero .social-icon img {
     width: 3rem;
 }
+
+/*================================PROFILE=============================*/
+
+.left-section .profile {
+    background: linear-gradient(to right, #1D3461 0% 50%, rgb(29, 52, 97, .8) 50% 100%), url(pics/profile-ben-sweet-2LowviVHZ-E-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-right: 1px solid #829CBC;
+    border-left: 10px solid #829CBC;
+    border-radius: 10px 80px 40px 10px;
+    margin: 4rem 2rem;
+    position: relative;
+}
+
+.left-section .profile:hover .profile-header {
+    padding-left: 3rem;
+}
+
+.left-section .profile .profile-header {
+    transition: 1s ease;
+    position: relative;
+    top: -5rem;
+    left: -5%;
+    width: 70%;
+    height: 70px;
+    background-color: #829CBC;
+    border-radius: 0px 30px 50px 0px;
+    padding-left: 2rem;
+    transform: translate(0, 2rem);
+    z-index: 3;
+}
+
+.left-section .profile .profile-header h2 {
+    position: relative;
+    /* color: #1D3461; */
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#1D3461, #376996);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .left-section .profile .profile-decor {
+    position: absolute;
+    left: 60%;
+    top: 5%;
+    transform: rotate(-40deg);
+    background: linear-gradient(to left, #1D3461, transparent);
+    width: 10rem;
+    height: 10rem;
+    border-right: 1px solid #829CBC;
+    border-radius: 50%;
+} */
+
+.left-section .profile .profile-body {
+    position: relative;
+    z-index: 3;
+}
+
+
+/*================================SKILLS==============================*/
+
+.left-section .skills {
+    background: linear-gradient(to right, rgb(29, 52, 97, .8) 0% 50%, #1D3461 50% 100%), url(pics/skills-nubelson-fernandes-Y376h7VN27c-unsplash.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    border-left: 1px solid #829CBC;
+    border-right: 10px solid #829CBC;
+    border-radius: 80px 10px 10px 40px;
+    margin: 4rem 2rem;
+}
+
+
+.left-section .skills:hover .skills-header {
+    right: -28%;
+    width: 43%;
+}
+
+.left-section .skills .skills-header {
+    transition: 1s ease;
+    position: relative;
+    top: -5rem;
+    right: -30%;
+    width: 42%;
+    height: 70px;
+    background-color: #829CBC;
+    border-radius: 30px 0 0 50px;
+    padding-left: 12rem;
+    transform: translate(0, 2rem);
+    z-index: 3;
+}
+
+.left-section .skills .skills-header h2 {
+    position: relative;
+    /* color: #1D3461; */
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#1D3461, #376996);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .skills .skills-pics {
     display: flex;
@@ -208,6 +324,18 @@ header .burger-menu-options .burger-item:hover {
 .skills .skills-pics img {
     width: 3rem;
 }
+
+/*=============================EXPERIENCE=============================*/
+
+.left-section .experience {
+    background: linear-gradient(to right, #1D3461 0% 37.5%, rgb(29, 52, 97, .8) 37.5% 100%), url(pics/exp-adrian-susec-fg8Bq7BuTGY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*===============================PORTFOLIO============================*/
 
 .portfolio .project-cards {
     display: flex;
@@ -303,8 +431,7 @@ header .burger-menu-options .burger-item:hover {
     top: 0;
 }
 
-
-
+/*=============================CONTACT================================*/
 
 .contact-form {
     text-align: center;
@@ -327,7 +454,9 @@ header .burger-menu-options .burger-item:hover {
     color: whitesmoke;
 }
 
-
+/*=====================================================================
+                                RIGHT SECTION
+======================================================================*/
 
 .right-section {
     grid-area: sidebar;
@@ -344,6 +473,7 @@ header .burger-menu-options .burger-item:hover {
 .right-section .sidenav {
     display: flex;
     flex-direction: column;
+    height: 95%;
 }
 
 .right-section .sidenav a {
@@ -351,7 +481,7 @@ header .burger-menu-options .burger-item:hover {
 }
 
 .right-section .sidenav a:link {
-    height: 103px;
+    height: 20%;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -394,7 +524,7 @@ header .burger-menu-options .burger-item:hover {
 }
 
 .right-section .sidenav a:hover {
-    background-size: 102.5%;
+    background-size: 140%;
 }
 
 .right-section .sidenav a .nav-item {
@@ -417,7 +547,9 @@ header .burger-menu-options .burger-item:hover {
 
 
 
-
+/*=====================================================================
+                                FOOTER
+======================================================================*/
 
 footer {
     grid-area: footer;
