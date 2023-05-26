@@ -124,12 +124,16 @@ header .burger-menu-options .burger-item:hover {
 
 .left-section {
     grid-area: main;
-    /* margin: 0 1.5rem; */
 }
 
 .left-section .hero, .left-section .profile, .left-section .skills, .left-section .experience, .left-section .portfolio, .left-section .contact {
     padding: 1.5rem;
 }
+
+.profile, .skills, .experience, .portfolio, .contact {
+    scroll-margin-top: 5rem;
+}
+
 
 /*================================HERO================================*/
 
@@ -223,8 +227,8 @@ header .burger-menu-options .burger-item:hover {
     border-right: 1px solid #829CBC;
     border-left: 10px solid #829CBC;
     border-radius: 10px 80px 40px 10px;
-    margin: 4rem 2rem;
     position: relative;
+    margin: 3rem 2rem 8rem;
 }
 
 .left-section .profile:hover .profile-header {
@@ -253,9 +257,9 @@ header .burger-menu-options .burger-item:hover {
     -webkit-animation: animate 15s linear infinite;
     animation: animate 15s linear infinite;
 }
-/* need to fix all these issues with webkit */
+/* no more issues, just need to experiment and make better */
 
-@-webkit-keyframes animate {
+@keyframes animate {
     0% {
       background-position: left 0 top 50px;
     }
@@ -596,6 +600,7 @@ footer .logo-copyright h4 {
 footer .logo-copyright h4:hover {
     transform: scale(1.05);
     cursor: pointer;
+    color: whitesmoke;
 }
 
 footer .formalities {
@@ -609,7 +614,12 @@ footer .formalities {
 footer .formalities a {
     color: #829CBC;
     margin:  .3rem .8rem;
-    /* love this color for the footer! */
+    text-decoration: none;
+}
+
+footer .formalities a:hover {
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 footer .socials {
@@ -623,6 +633,11 @@ footer .socials {
 
 footer .socials img {
     width: 2rem;
+}
+
+footer .socials img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 
