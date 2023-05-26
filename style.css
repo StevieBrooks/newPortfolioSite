@@ -91,11 +91,14 @@ header .burger-menu-options a {
 
 header .burger-menu-options .burger-item {
     padding: 1.5rem;
-    border-bottom: 1px solid #829CBC;
+    border-bottom: 1px solid #1D3461;
 }
 
 header .burger-menu-options .burger-item:hover {
-    background-color: #376996;
+    background-color: #1D3461;
+    color: #829CBC;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /*=====================================================================
@@ -448,7 +451,7 @@ header .burger-menu-options .burger-item:hover {
 
 .contact-form {
     text-align: center;
-    background-color: #1F487E;
+    background-color: #1D3461;
     border: 1px solid #6290C8;
     border-radius: 12px;
     padding: 1rem;
@@ -538,7 +541,7 @@ header .burger-menu-options .burger-item:hover {
 
 .right-section .sidenav a:hover {
     background-size: 140%;
-    height: 30%;
+    height: 25%;
     border-top: 2px solid #829CBC;
     border-bottom: 2px solid #829CBC;
 }
