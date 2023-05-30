@@ -292,31 +292,30 @@ header .burger-menu-options .burger-item:hover {
 /*================================SKILLS==============================*/
 
 .left-section .skills {
-    background: linear-gradient(to right, rgb(29, 52, 97, .8) 0% 50%, #1D3461 50% 100%), url(pics/skills-nubelson-fernandes-Y376h7VN27c-unsplash.jpg);
+    background: linear-gradient(to right, #1D3461 0% 50%, rgb(29, 52, 97, .8) 50% 100%), url(pics/skills-nubelson-fernandes-Y376h7VN27c-unsplash.jpg);
     background-size: cover;
-    background-position: 50% 40%;
-    border-left: 1px solid #829CBC;
-    border-right: 10px solid #829CBC;
-    border-radius: 80px 10px 10px 40px;
-    margin: 4rem 2rem;
+    background-position: 50% 50%;
+    border-right: 1px solid #829CBC;
+    border-left: 10px solid #829CBC;
+    border-radius: 10px 80px 40px 10px;
+    position: relative;
+    margin: 3rem 2rem 8rem;
 }
 
 
 .left-section .skills:hover .skills-header {
-    right: -28%;
-    width: 43%;
+    padding-left: 3rem;
 }
 
 .left-section .skills .skills-header {
     transition: 1s ease;
     position: relative;
     bottom: 3.5rem;
-    left: 30%;
-    width: 12.5rem;
+    width: 15rem;
     height: 70px;
     background-color: #829CBC;
-    border-radius: 30px 0 0 50px;
-    padding-left: 4rem;
+    border-radius: 0px 30px 50px 0px;
+    padding-left: 2rem;
     z-index: 3;
 }
 
@@ -506,41 +505,41 @@ header .burger-menu-options .burger-item:hover {
 
 .right-section .sidenav a:nth-child(1) {
     background: linear-gradient(to right, rgb(29, 52, 97, .7), rgb(31, 72, 126, .7)), url(pics/profile-ben-sweet-2LowviVHZ-E-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 70%;
+    background-size: 200%;
+    background-position: 50% 50%;
 }
 
 .right-section .sidenav a:nth-child(2) {
     background: linear-gradient(to right, rgb(29, 52, 97, .3), rgb(31, 72, 126, .3)), url(pics/skills-nubelson-fernandes-Y376h7VN27c-unsplash.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position: 50% 50%;
 }
 
 .right-section .sidenav a:nth-child(3) {
     background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/exp-adrian-susec-fg8Bq7BuTGY-unsplash.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position: 50% 50%;
 }
 
 .right-section .sidenav a:nth-child(4) {
     background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/port-ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position: 50% 50%;
 }
 
 .right-section .sidenav a:nth-child(5) {
     background: linear-gradient(to right, rgb(29, 52, 97, .5), rgb(31, 72, 126, .5)), url(pics/contact-pawel-czerwinski--0xCCPIbl3M-unsplash.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position: 50% 80%;
 }
 
 .right-section .sidenav a:hover .nav-item {
     padding-left: 1.5rem;
-    font-size: 1.6rem;
+    font-size: 170%;
 }
 
 .right-section .sidenav a:hover {
-    background-size: 140%;
+    background-size: 220%;
     height: 25%;
     border-top: 2px solid #829CBC;
     border-bottom: 2px solid #829CBC;
@@ -549,7 +548,7 @@ header .burger-menu-options .burger-item:hover {
 .right-section .sidenav a .nav-item {
     position: relative;
     bottom: .5rem;
-    font-size: 1.3rem;
+    font-size: 150%;
     font-weight: bold;
     padding: 1rem;
     letter-spacing: .1rem;
