@@ -14,6 +14,11 @@ body {
                     "footer footer footer footer";
 }
 
+p {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+}
 /*=====================================================================
                                 HEADER
 ======================================================================*/
@@ -232,6 +237,8 @@ header .burger-menu-options .burger-item:hover {
     border-radius: 10px 80px 40px 10px;
     position: relative;
     margin: 3rem 2rem 8rem;
+    height: 300px;
+    overflow: hidden;
 }
 
 .left-section .profile:hover .profile-header {
@@ -288,6 +295,24 @@ header .burger-menu-options .burger-item:hover {
     z-index: 3;
 }
 
+.profile .profile-footer {
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    background-color: rgb(29, 52, 97, .9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    border-top: 1px solid #829CBC;
+    display: flex;
+    justify-content: center;
+}
+
+.profile .profile-footer img {
+    width: 7rem;
+    opacity: .7;
+}
 
 /*================================SKILLS==============================*/
 
