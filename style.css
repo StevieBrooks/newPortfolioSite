@@ -19,6 +19,17 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6rem;
 }
+
+a {
+    color: #829CBC;
+    font-style: italic;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+a:hover {
+    color: whitesmoke;
+}
 /*=====================================================================
                                 HEADER
 ======================================================================*/
@@ -242,7 +253,7 @@ header .burger-menu-options .burger-item:hover {
 }
 
 .left-section .profile:hover .profile-header {
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .left-section .profile .profile-header {
@@ -309,9 +320,14 @@ header .burger-menu-options .burger-item:hover {
     justify-content: center;
 }
 
-.profile .profile-footer img {
-    width: 7rem;
+.profile .profile-arrow {
+    font-size: 3rem;
     opacity: .7;
+}
+
+.profile .profile-arrow:hover {
+    font-size: 4rem;
+    cursor: pointer;
 }
 
 /*================================SKILLS==============================*/
@@ -329,14 +345,14 @@ header .burger-menu-options .burger-item:hover {
 
 
 .left-section .skills:hover .skills-header {
-    padding-left: 3rem;
+    padding-left: 4rem;
 }
 
 .left-section .skills .skills-header {
     transition: 1s ease;
     position: relative;
     bottom: 3.5rem;
-    width: 15rem;
+    width: 13rem;
     height: 70px;
     background-color: #829CBC;
     border-radius: 0px 30px 50px 0px;
@@ -354,15 +370,51 @@ header .burger-menu-options .burger-item:hover {
 }
 
 
-.skills .skills-pics {
+.skills .skills-cards {
     display: flex;
     justify-content: space-around;
-    width: 15rem;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem auto;
 }
 
-.skills .skills-pics img {
-    width: 3rem;
+.skills .skill-card {
+    width: 7rem;
+    height: 7rem;
+    background-color: #1D3461;
+    border-bottom: 1px solid #829CBC;
+    border-right: 1px solid #829CBC;
+    border-radius: 10px;
+    margin: 1rem;
+    padding: .5rem;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+
+.skills .skill-card:hover {
+    transform: translate(0, -.3rem);
+}
+
+.skills .skill-card-body {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid #829CBC;
+}
+
+.skills .skills-cards img {
+    width: 4rem;
+}
+
+.skills .skill-card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .skill-card-footer p {
+    margin: 0;
+    padding: .4rem 0 0;
+    width: fit-content;
 }
 
 /*=============================EXPERIENCE=============================*/
@@ -372,6 +424,31 @@ header .burger-menu-options .burger-item:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.experience .experience-header {
+    transition: 1s ease;
+    position: relative;
+    bottom: 3.5rem;
+    width: 22rem;
+    height: 70px;
+    background-color: #829CBC;
+    border-radius: 5px 30px 50px 5px;
+    padding: 0 0 1rem 2rem;
+    z-index: 3;
+}
+
+.experience:hover .experience-header {
+    padding-left: 4rem;
+}
+
+.experience .experience-header h2 {
+    position: relative;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(#1D3461, #376996);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
