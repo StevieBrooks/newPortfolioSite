@@ -607,17 +607,16 @@ section .container {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .pdf-button {
+.resume #pdfButton {
   background-color: rgba(98, 144, 200, .3);
   color: whitesmoke;
   border: 0;
   padding: 10px 30px;
-  color: whitesmoke;
   transition: 0.4s;
   border-radius: 4px;
 }
 
-.resume .pdf-button:hover {
+.resume #pdfButton:hover {
   background-color: #6290C8;
   font-weight: bold;
 }
@@ -678,6 +677,15 @@ section .container {
   top: 0;
   background: #6290C8;
   border: 2px solid #6290C8;
+}
+
+@media(max-width: 370px) {
+  .cv-title h2 {
+    font-size: .7rem;
+  }
+  .cv-title h2::after {
+    width: 90px;
+  }
 }
 
 /*--------------------------------------------------------------
